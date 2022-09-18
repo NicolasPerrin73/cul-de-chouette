@@ -4,16 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Cul de chouette</title>
     <script src="script.js" defer></script>
   </head>
   <body>
-    <div id="d">
+    <h2>Jeu</h2>
+
+    <div id="d" class="champ">
       <p>Valeur du dé:</p>
       <input type="number" min="1" max="6" id="dInput" />
     </div>
 
-    <div>
+    <div class="champ">
       <label for="combinaison">La combinaison est une :</label>
       <select name="combinaison" id="combinaison">
         <option value="chouette">Chouette</option>
@@ -22,7 +25,7 @@
       </select>
     </div>
 
-    <div>
+    <div class="champ">
       <label for="player">Le joueur qui remporte les points est:</label>
       <select name="player" id="player">
         <option value="player1">Joueur 1</option>
@@ -34,13 +37,25 @@
 
     <button id="valid">Valider</button>
 
-    <div>
+    <h2>Modification de score</h2>
+
+    <div class="champ">
+      <label for="player">Le joueur qui remporte les points est:</label>
+      <select name="player" id="playerScore">
+        <option value="player1">Joueur 1</option>
+        <option value="player2">Joueur 2</option>
+        <option value="player3">Joueur 3</option>
+        <option value="player4">Joueur 4</option>
+      </select>
+    </div>
+
+    <div class="champ">
       <p>Ajouter des points:</p>
       <input type="number" id="modifScore" />
       <button id="modifScoreButton">Modifier le score</button>
     </div>
 
-    <div>
+    <div class="champ">
       <h2>Résultat</h2>
       <p>score du Jouer 1:<span id="scoreP1"></span></p>
       <p>score du Jouer 2:<span id="scoreP2"></span></p>

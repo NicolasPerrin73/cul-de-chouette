@@ -79,9 +79,9 @@ validButton.addEventListener("click", function () {
 let modifScoreButton = document.querySelector("#modifScoreButton");
 
 modifScoreButton.addEventListener("click", function () {
-  const playerInput = document.getElementById("player");
+  const playerInput = document.getElementById("playerScore");
   let playerSelected = playerInput.options[playerInput.selectedIndex].value;
-  const scoreInput = document.getElementById("modifScore").value;
+  let scoreInput = document.getElementById("modifScore").value;
   let scoreInputNumber = parseInt(scoreInput);
 
   function scoreJoueur() {
@@ -102,4 +102,6 @@ modifScoreButton.addEventListener("click", function () {
   spanScoreP2.innerText = scoreJ2;
   spanScoreP3.innerText = scoreJ3;
   spanScoreP4.innerText = scoreJ4;
+
+  alert("score modifier");
 });
