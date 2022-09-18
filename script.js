@@ -68,12 +68,18 @@ validButton.addEventListener("click", function () {
     }
   }
 
-  scoreJoueur();
+  if (dInputValue == "") {
+    alert("merci de mettre le jet de dé!");
+  } else {
+    scoreJoueur();
+  }
 
   spanScoreP1.innerText = scoreJ1;
   spanScoreP2.innerText = scoreJ2;
   spanScoreP3.innerText = scoreJ3;
   spanScoreP4.innerText = scoreJ4;
+
+  document.querySelector("#dInput").value = "";
 });
 
 let modifScoreButton = document.querySelector("#modifScoreButton");
@@ -103,5 +109,5 @@ modifScoreButton.addEventListener("click", function () {
   spanScoreP3.innerText = scoreJ3;
   spanScoreP4.innerText = scoreJ4;
 
-  alert("score modifier");
+  document.getElementById("modifScore").value = "";
 });
