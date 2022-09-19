@@ -8,7 +8,7 @@
     <title>Cul de chouette</title>
     <script src="../script/jeu.js" defer></script>
   </head>
-  <body>
+  <body class="home">
     <a href="../index.html">Acceuil</a>
     <h2>Jeu</h2>
 
@@ -29,9 +29,8 @@
     <div class="champ">
       <label for="player">Le joueur qui remporte les points est:</label>
       <select name="player" id="player"></select>
+      <button id="valid">Valider</button>
     </div>
-
-    <button id="valid">Valider</button>
 
     <div class="animationTour">
       <h2>✅ Tour pris en compte ✅</h2>
@@ -54,7 +53,7 @@
       <h2>✅ Modification pris en compte ✅</h2>
     </div>
 
-    <div class="champ">
+    <div class="champ result">
       <h2>Résultat</h2>
       <div id="result"></div>
     </div>

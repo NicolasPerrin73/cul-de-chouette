@@ -7,6 +7,7 @@
   margin: 20px;
   width: auto;
   height: 50px;
+  text-align: center;
 }
 
 .champ {
@@ -56,8 +57,8 @@ p {
 }
 
 h1 {
-  margin-top: 0;
-  padding-top: 10px;
+  margin: 0;
+  padding: 10px;
   text-align: center;
   font-size: 3.5rem;
 }
@@ -129,8 +130,35 @@ li {
   margin-top: 25px;
 }
 
+p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.champ {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+label {
+  font-size: 1.5rem;
+}
+
+#modifScore {
+  width: 60px;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+}
+
 @media screen and (min-width: 390px) {
   #joueurInput {
     width: 30%;
+  }
+  #imgDés {
+    width: 20%;
   }
 }
