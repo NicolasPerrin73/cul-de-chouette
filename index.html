@@ -1,74 +1,22 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="./script/index.js" defer></script>
     <title>Cul de chouette</title>
-    <script src="script.js" defer></script>
   </head>
   <body>
-    <h2>Jeu</h2>
+    <h1>Bienvenue au cul de chouette</h1>
 
-    <div id="d" class="champ">
-      <p>Valeur du dé:</p>
-      <input type="number" min="1" max="6" id="dInput" />
-    </div>
+    <h2>Indiquez qui joue :</h2>
+    <input type="text" name="playerArray" id="joueurInput" placeholder="Prénom du joueur" />
+    <button id="addPlayer">Ajouter le joueur</button>
 
-    <div class="champ">
-      <label for="combinaison">La combinaison est une :</label>
-      <select name="combinaison" id="combinaison">
-        <option value="chouette">Chouette</option>
-        <option value="velute">Velute</option>
-        <option value="cul de chouette">Cul de chouette</option>
-      </select>
-    </div>
-
-    <div class="champ">
-      <label for="player">Le joueur qui remporte les points est:</label>
-      <select name="player" id="player">
-        <option value="player1">Joueur 1</option>
-        <option value="player2">Joueur 2</option>
-        <option value="player3">Joueur 3</option>
-        <option value="player4">Joueur 4</option>
-      </select>
-    </div>
-
-    <button id="valid">Valider</button>
-
-    <div class="animationTour">
-      <h2>✅ Tour pris en compte ✅</h2>
-    </div>
-
-    <h2>Modification de score</h2>
-
-    <div class="champ">
-      <label for="player">Modifier les point pour le:</label>
-      <select name="player" id="playerScore">
-        <option value="player1">Joueur 1</option>
-        <option value="player2">Joueur 2</option>
-        <option value="player3">Joueur 3</option>
-        <option value="player4">Joueur 4</option>
-      </select>
-    </div>
-
-    <div class="champ">
-      <p>Nombre de point:</p>
-      <input type="number" id="modifScore" />
-      <button id="modifScoreButton">Modifier le score</button>
-    </div>
-
-    <div id="modifScoreAnimation" class="animationTour">
-      <h2>✅ Modification pris en compte ✅</h2>
-    </div>
-
-    <div class="champ">
-      <h2>Résultat</h2>
-      <p>score du Jouer 1:<span id="scoreP1"></span></p>
-      <p>score du Jouer 2:<span id="scoreP2"></span></p>
-      <p>score du Jouer 3:<span id="scoreP3"></span></p>
-      <p>score du Jouer 4:<span id="scoreP4"></span></p>
-    </div>
+    <ul id="playerList"></ul>
+    <button id="reset">Effacer la liste des joueurs</button>
+    <button id="valider"><a href="./pages/jeu.html"> Valider</a></button>
   </body>
 </html>

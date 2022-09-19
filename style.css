@@ -31,3 +31,7 @@ p {
 .animationTourDisplay {
   animation: tour 3s both;
 }
+
+.score {
+  font-weight: bold;
+}
