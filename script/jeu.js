@@ -11,7 +11,7 @@ function diplayResultat() {
   resultatDiv.innerHTML = "";
   for (i = 0; i < playerLS.length; i++) {
     let pScore = document.createElement("p");
-    pScore.innerText = `Score du joueur ${playerLS[i].nom}: ${playerLS[i].score}`;
+    pScore.innerText = `${playerLS[i].nom} : ${playerLS[i].score}`;
     resultatDiv.appendChild(pScore);
   }
 }
@@ -74,6 +74,7 @@ function play() {
     let combinaisonSelected = combinaisonInput.options[combinaisonInput.selectedIndex].value;
     const playerInput = document.getElementById("player");
     let playerSelected = playerInput.options[playerInput.selectedIndex].value;
+    console.log(dInputValue);
 
     function calculResultat() {
       if (combinaisonSelected == "chouette") {
@@ -124,16 +125,15 @@ function modifyScore() {
       findPlayer.score = findPlayer.score + scoreInputNumber;
     }
 
-    modifyScoreJoueur();
-
-    document.getElementById("modifScore").value = "";
-
-    diplayResultat();
-
-    animationScore.classList.add("animationTourDisplay");
-    setTimeout(hideClass, 3500);
-
-    winner();
+    if (scoreInput == "") {
+    } else {
+      modifyScoreJoueur();
+      document.getElementById("modifScore").value = "";
+      diplayResultat();
+      animationScore.classList.add("animationTourDisplay");
+      setTimeout(hideClass, 3500);
+      winner();
+    }
   });
 }
 

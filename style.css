@@ -4,9 +4,9 @@
 }
 
 #valid {
-  margin: 20px;
+  margin-left: 5px;
   width: auto;
-  height: 50px;
+  height: 40px;
   text-align: center;
 }
 
@@ -32,6 +32,7 @@ p {
 
 .animationTour {
   opacity: 0;
+  text-align: center;
 }
 
 .animationTourDisplay {
@@ -69,6 +70,10 @@ h2 {
   font-size: 2rem;
 }
 
+h3 {
+  margin: 0;
+}
+
 #joueurInput {
   display: flex;
   width: 70%;
@@ -99,6 +104,8 @@ h2 {
 a {
   text-decoration: none;
   color: black;
+  font-size: 1.5rem;
+  margin: 5px;
 }
 
 a:visited {
@@ -139,6 +146,7 @@ p {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 label {
@@ -149,9 +157,23 @@ label {
   width: 60px;
 }
 
+#modifScoreButton {
+  height: 30px;
+  margin-top: 10px;
+}
+
 .result {
   display: flex;
   flex-direction: column;
+}
+
+#player {
+  width: 60%;
+  height: 40px;
+}
+
+input {
+  height: 25px;
 }
 
 @media screen and (min-width: 390px) {
