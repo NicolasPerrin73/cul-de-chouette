@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "CATFranken-Deutsch";
+  src: url("./assets/font/CATFranken-Deutsch.ttf");
+}
+
 #valid {
   margin: 20px;
   width: auto;
@@ -34,4 +39,98 @@ p {
 
 .score {
   font-weight: bold;
+}
+
+.fond {
+  position: absolute;
+  object-fit: scale-down;
+  width: 100%;
+  z-index: -1;
+}
+
+.home {
+  margin: 0;
+  background: url("./assets/preview-regles-pdf-1.png");
+  background-size: 100%;
+  font-family: "CATFranken-Deutsch", Helvetica, sans-serif;
+}
+
+h1 {
+  margin-top: 0;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+h2 {
+  text-align: center;
+  margin: 5px;
+  font-size: 2rem;
+}
+
+#joueurInput {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  height: 25px;
+}
+
+#addPlayer {
+  display: flex;
+  margin: auto;
+  margin-top: 10px;
+  padding: 7px;
+}
+
+#reset {
+  display: flex;
+  margin: auto;
+  padding: 7px;
+}
+
+#valider {
+  display: flex;
+  margin: auto;
+  margin-top: 10px;
+  padding: 7px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  font-size: 2rem;
+  text-align: center;
+  padding: 0;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+#imgDés {
+  position: relative;
+
+  width: 50%;
+  height: auto;
+  margin-top: 25px;
+}
+
+@media screen and (min-width: 390px) {
+  #joueurInput {
+    width: 30%;
+  }
 }
