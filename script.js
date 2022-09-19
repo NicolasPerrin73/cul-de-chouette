@@ -29,6 +29,12 @@ function culDeChouette(d) {
   return (Resultat = 40 + 10 * d);
 }
 
+let animationTour = document.querySelector(".animationTour");
+
+function hideClass() {
+  animationTour.classList.remove("animationTourDisplay");
+}
+
 const validButton = document.querySelector("#valid");
 
 validButton.addEventListener("click", function () {
@@ -72,6 +78,9 @@ validButton.addEventListener("click", function () {
     alert("merci de mettre le jet de dé!");
   } else {
     scoreJoueur();
+
+    animationTour.classList.add("animationTourDisplay");
+    setTimeout(hideClass, 2500);
   }
 
   spanScoreP1.innerText = scoreJ1;

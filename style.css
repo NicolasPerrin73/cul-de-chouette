@@ -11,3 +11,23 @@
 p {
   margin: 0;
 }
+
+@keyframes tour {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animationTour {
+  opacity: 0;
+}
+
+.animationTourDisplay {
+  animation: tour 2s both;
+}
