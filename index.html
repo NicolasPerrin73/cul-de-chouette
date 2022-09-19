@@ -44,7 +44,7 @@
     <h2>Modification de score</h2>
 
     <div class="champ">
-      <label for="player">Le joueur qui remporte les points est:</label>
+      <label for="player">Modifier les point pour le:</label>
       <select name="player" id="playerScore">
         <option value="player1">Joueur 1</option>
         <option value="player2">Joueur 2</option>
@@ -54,9 +54,13 @@
     </div>
 
     <div class="champ">
-      <p>Ajouter des points:</p>
+      <p>Nombre de point:</p>
       <input type="number" id="modifScore" />
       <button id="modifScoreButton">Modifier le score</button>
+    </div>
+
+    <div id="modifScoreAnimation" class="animationTour">
+      <h2>✅ Modification pris en compte ✅</h2>
     </div>
 
     <div class="champ">
